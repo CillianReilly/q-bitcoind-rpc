@@ -2,10 +2,10 @@
 
 kdb+ script to interact with a running Bitcoin node via the json RPC API.
 
-Configure connection details in api.q
-url: location of the target node, default is http://127.0.0.1:8332
-rpcuser: rpc user name, specify in bitcoin.conf on the node server
-rpcpassword: rpc password, specify in bitcoin.conf on the node server
+Configure connection details in api.q  
+url: location of the target node, default is http://127.0.0.1:8332  
+rpcuser: rpc user name, specify in bitcoin.conf on the node server  
+rpcpassword: rpc password, specify in bitcoin.conf on the node server  
 
 By default, the node binds to 127.0.0.1:8332. If you intend to query the node from another machine, you must configure rpcbind and rpcallowip in bitcoin.conf accordingly.
 
