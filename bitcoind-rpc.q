@@ -21,7 +21,7 @@ utl.query:{
 	}
 
 utl.init:{
-	h:utl.query[`help][];
+	h:@[utl.query[`help];[];{-1"Error querying bitcoin node on init: ",x;exit 1}];
 	h:`$(h?'" ")#'h:h where h[;0]in .Q.a;
 	@[`.;h;:;]utl.query@'h;
 	}
